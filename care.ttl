@@ -1,0 +1,175 @@
+PREFIX cs: <http://linked.data.gov.au/def/care>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX care: <http://linked.data.gov.au/def/car/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX sdo: <https://schema.org/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+
+cs:
+    a skos:ConceptScheme ;
+    dcterms:created "2019-12-11"^^xsd:date ;
+    dcterms:creator <https://linked.data.gov.au/org/idn> ;
+    dcterms:modified "2022-05-06"^^xsd:date ;
+    dcterms:publisher <https://linked.data.gov.au/org/idn> ;
+    dcterms:rights "Copyright 2022 Commonwealth of Australia (Indigenous Data Network)" ;
+    dcterms:source "https://doi.org/10.5334/dsj-2020-043"^^xsd:anyURI ;
+    skos:definition "The CARE Principles for Indigenous Data Governance's elements as a SKOS vocabulary"@en ;
+    skos:hasTopConcept
+        care:C ,
+        care:A ,
+        care:R ,
+        care:E ;
+    skos:prefLabel "CARE Principles vocabulary" ;
+.
+
+<https://linked.data.gov.au/org/idn>
+    a sdo:Organization ;
+    sdo:name "Indigenous Data Network" ;
+    sdo:url "hhttps://www.idnau.org"^^xsd:anyURI ;
+.
+
+care:C
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The principle of collective benefit" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Collective Benefit" ;
+    skos:topConceptOf cs: ;
+.
+
+care:C1
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "For inclusive development and innovation" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "C1" ;
+    skos:broader care:C: ;
+.
+
+care:C2
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "For improved governance and citizen engagement" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "C2" ;
+    skos:broader care:C: ;
+.
+
+care:C3
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "For equitable rights" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "C3" ;
+    skos:broader care:C: ;
+.
+
+care:A
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The principle of authority to control" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Authority to Control" ;
+    skos:topConceptOf cs: ;
+.
+
+care:A1
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Recognizing rights and interests" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "A1" ;
+    skos:broader care:A: ;
+.
+
+care:A2
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Data for governance" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "A2" ;
+    skos:broader care:A: ;
+.
+
+care:A3
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "Governance of data" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "A3" ;
+    skos:broader care:A: ;
+.
+
+care:R
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The principle of responsibility" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Responsibility" ;
+    skos:topConceptOf cs: ;
+.
+
+care:R1
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "R1" ;
+    skos:broader care:A: ;
+.
+
+care:R2
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "R2" ;
+    skos:broader care:A: ;
+.
+
+care:R3
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "R3" ;
+    skos:broader care:A: ;
+.
+
+care:E
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "The principle of ethics" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "Ethics" ;
+    skos:topConceptOf cs: ;
+.
+
+care:E1
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "E1" ;
+    skos:broader care:A: ;
+.
+
+care:E2
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "E2" ;
+    skos:broader care:A: ;
+.
+
+care:E3
+    a skos:Concept ;
+    rdfs:isDefinedBy cs: ;
+    skos:definition "" ;
+    skos:inScheme cs: ;
+    skos:prefLabel "E3" ;
+    skos:broader care:A: ;
+.
