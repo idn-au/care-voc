@@ -1,0 +1,32 @@
+= CARE Vocabulary
+
+This repository contains the elements of the (Collective Benefit, Authority to Control, Responsibility, and Ethics (CARE) principles listed as a Semantic Web vocabulary, as used by the https://mspgh.unimelb.edu.au/centres-institutes/centre-for-health-equity/research-group/indigenous-data-network[Indigenous Data Network (IDN)].
+
+The IDN uses this vocabulary to rate datasets related to indigenous people according to those principles. The CARE Principles themselves are unaltered.
+
+This vocabulary is available online at a persistent web location:
+
+**https://linked.data.gov.au/def/care**
+
+
+
+== License & Rights
+
+The contents of this repository is licensed under Creative Commons 4.0 International. See the LICENSE file in the repository for details. Note that the underlying of the CARE Principles is work that is openly published at:
+
+Carroll, SR, et al. 2020. The CARE Principles for Indigenous +
+Data Governance. _Data Science Journal_, 19: 43, pp. 1-12. +
+DOI: https://doi.org/10.5334/dsj-2020-043 +
+
+
+== Contacts
+
+Initial technical development of this work is being undertaken by the following, for the Indigenous Data Network:
+
+**Nicholas J. Car** +
+*Data Architect* +
+nick@kurrawong.net  
+
+**Sandra Silcot** +
+*Analyst* +
+Indigenous Data Network +

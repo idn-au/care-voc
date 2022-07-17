@@ -1,0 +1,106 @@
+@prefix : <http://dublincore.org/documents/dcmi-terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://doi.org/10.26193/SSWEX1> 
+    a dcat:Dataset ;
+    dcterms:contributor "Colmar Brunton (Waves 5-10)",
+        "Department of Social Services",
+        "Roy Morgan (Waves 1-4)" ;
+    dcterms:creator "Department of Social Services" ;
+    dcterms:dateSubmitted "2019-08-07" ;
+    dcterms:description "The Longitudinal Study of Indigenous Children (LSIC) follows the development of around 1,700 Indigenous children and their families across urban, regional and remote Australia. It is one of the largest longitudinal studies of Indigenous people worldwide. LSIC aims to improve understanding of the lives of Aboriginal and Torres Strait Islander children, their families and communities to inform better policy and program development. The study collects information about parenting, family relationships, housing and neighbourhood, childhood education, child and parent health, parental education, employment and income, attitudes and aspirations, as well as culture and community. It includes two groups of Aboriginal and/or Torres Strait Islander children who were aged 6 to 18 months (B cohort) and 3.5-5 years (K cohort) when the study began in 2008. Data is primarily collected via annual face-to-face interviews with Indigenous interviewers." ;
+    dcterms:identifier "doi:10.26193/SSWEX1" ;
+    dcterms:isReferencedBy "FLoSse Research, DSS's Longitudinal Surveys Electronic Research., url,  http://flosse.dss.gov.au/index.php",
+        "Footprints in Time - The Longitudinal Study of Indigenous Children (LSIC); Publications, Key Summary Report., url, https://www.dss.gov.au/about-the-department/publications-articles/research-publications/longitudinal-data-initiatives/footprints-in-time-the-longitudinal-study-of-indigenous-children-lsic#5" ;
+    dcterms:issued "2019-09-18" ;
+    dcterms:language "English" ;
+    dcterms:license "NONE" ;
+    dcterms:modified "2022-02-24T04:22:36Z" ;
+    dcterms:publisher "ADA Dataverse" ;
+    dcterms:rights """<h3>Summary of Authorised Data User Responsibilities</h3> 
+<p>The terms and conditions of use for NCLD datasets are set out in the <a href="https://ada.edu.au/updated_national_centre_for_longitudinal_data_access_and_use_guidelines_v1-0/">NCLD Access and Use Guidelines</a> including obligations as an authorised data user. A summary of your obligations are as follows:</p> 
+
+<p>1. STORAGE:</p>
+<ul><li>Store all copies of the Datasets, whether full or partial, in a manner set out in the Guidelines.</li>
+<li>Destroy or delete all copies of any Dataset you no longer need.</li>
+<li>Understand that you are responsible for the Datasets unless and until all copies of the dataset in your control have been destroyed AND you have notified DSS of their destruction.</li></ul>
+<p>2. USAGE:</p>
+<ul><li>Do not attempt to identify individuals in any Dataset</li>
+<li>If spontaneous recognition occurs, to not share the identity of any person within the Dataset. </li>
+<li>Do not share unit record data with anyone who is not an authorised user of the same Dataset.</li>
+<li>Do not match, share, link, integrate or merge any NCLD Dataset with other Datasets without written permission from DSS.</li></ul>
+<p>3. PUBLICATION:</p>
+<ul><li>Make all your published or finalised research publicly available in a manner set out in the Guidelines.</li>
+<li>Do not publish any Unit Record Data or any research material that could lead to respondent identification.</li>
+<li>Include the appropriate Dataset acknowledgement in all your research materials.</li>
+<li>Only publish research material that reports at a level of detail (e.g. for geography) as set out in the Guidelines.</li></ul>
+<p>4. NOTIFICATION:</p>
+<ul><li>Notify DSS in the following cases:</li>
+<ul><li>Change of personal details, including institutional affiliation</li>
+<li>Change or addition to intended research</li>
+<li>Change in expected completion date of research</li>
+<li>Terminating access to the Dataset</li>
+<li>Loss of the data or other potential breaches</li>
+<li>You are required by law to surrender the data to a third party</li>
+</li></ul>""",
+        "Access to controlled access files in this dataset is restricted." ;
+    dcterms:spatial "Australia" ;
+    dcterms:subject "Aboriginal communities", "Aboriginal culture", "Child health", "Children", "Education", "Family", "Health services", "Housing", "Living standards", "Schools", "Social Sciences", "Student assessment" ;
+    dcterms:temporal "2008-04-21", "2009-02-23", "2009-03-03", "2009-12-17", "2010-03-03", "2010-12-23", "2011-03-07", "2011-12-18", "2012-03-17", "2012-12-19", "2013-02-25", "2013-12-14", "2014-02-22", "2014-12-17", "2015-03-04", "2015-12-15", "2016-02-17", "2016-12-16", "2017-02-20", "2017-12-13" ;
+    dcterms:title "Footprints in Time: The Longitudinal Study of Indigenous Children, Release 10 (Waves 1-10)" ;
+    dcterms:type "Survey data" ;
+
+    :qualifiedAccordanceWithPrinciple [
+        :principle care:C1 ;
+        :accords :partially ;  # yes, no, partially, not-applicable, indeterminate
+        :justification "The dataset is publicly available; the dataset does not contain a license." ;
+    ] ,
+    [
+        :principle care:C2 ;
+        :accords :yes ;  # yes, no, partially, not-applicable, indeterminate
+        :justification "The dataset contains statistics on indigenous persons which could enhance service & policy needs of indigenous communities" ;
+    ] ,
+    [
+        :principle care:C3 ;
+        :accords :indeterminate ;  # yes, no, partially, not-applicable, indeterminate
+        :justification "The dataset contains statistics on indigenous persons which could enhance service & policy needs of indigenous communities" ;
+    ] ,
+    # in order to obtain a :yes score, we would need to know
+    # A11: indigenous people have informed consent in collection
+    # how evidenced: ethics/consent information discoverable
+    # A12: indigenous people have informed consent in use
+    # how evidenced: indigenous rights statement
+    [
+        :principle care:A1 ;
+        :accords :no ;  # yes, no, partially, not-applicable, indeterminate
+        :justification "A11 and A12 are unknown" ;  # there are links to AIATSIS documents...
+    ] ,
+    [
+        :principle care:A2 ;
+        :accords :no ;  # yes, no, partially, not-applicable, indeterminate
+        :justification "Instructions for indigenous people to obtain this data are not given" ;
+    ] ,
+    # A31: indigenous people are engaged in the stewardship of the data
+    # how evidenced: indigenous custodian agent identified
+    [
+        :principle care:A3 ;
+        :accords :no ;  # yes, no, partially, not-applicable, indeterminate
+        :justification "A11 & A31 are not known" ;
+    ] ,
+    # "Indigenous data use is unviable unless linked to relationships built on respect, reciprocity, trust, and mutual understanding, as defined by the Indigenous Peoples to whom those data relate."
+    # R11: the data must be related to indigenous people via specialised roles
+    # how evidenced: indigenous custodian agent identified
+    # R12: data collectors have confirmed acceptance of principles
+    # R12: data users have confirmed acceptance of principles
+    [
+        :principle care:R1 ;
+        :accords :partially ;  # yes, no, partially, not-applicable, indeterminate
+        :justification "Data users are asked for acceptance of principles to obtain; data use is conditional on an approvals process" ;
+    ] , 
+
+    # E11: a statement of clearence regarding the ethical portrayal of indigenous peoples must be obtined from an indigenous data custodian 
+    [
+        :principle care:E1 ;
+        :accords :no ;  # yes, no, partially, not-applicable, indeterminate
+        :justification "No indigenous custondian identified; no clearence statement from an indigenous custodian" ;
+    ] ,     

@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CARE Principles vocabulary</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <style>
+        #pylode {
+            position: fixed;
+            top: 130px;
+            left: -60px;
+            font-size: small;
+            transform: rotate(-90deg);
+            color: grey;
+        }
+        #pylode a {
+            font-size: 2em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #005A9C;
+        }
+        #pylode a:hover {
+            color: #333;
+        }
+
+        .cardinality {
+            font-style: italic;
+            color: #aa00aa;
+        }
+
+        dt {
+            font-weight: bold;
+            padding: 5px 0 5px 0;
+        }
+
+        ul.hlist {
+            list-style-type: none;
+            border: 1px solid navy;
+            padding:5px;
+            background-color: #F4FFFF;
+        }
+
+        ul.hierarchy {
+            border: 1px solid navy;
+            padding: 5px 25px 5px 25px;
+            background-color: #F4FFFF;
+        }
+
+
+        ul.hlist li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .entity {
+            border: 1px solid navy;
+            margin:5px 0 5px 0;
+            padding: 5px;
+        }
+
+        .entity th {
+            width: 150px;
+            vertical-align: top;
+        }
+
+        .entity th,
+        .entity td {
+            padding-bottom: 20px;
+        }
+
+        .entity table th {
+            text-align: left;
+        }
+
+        section#overview img {
+            max-width: 1000px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            text-align: left
+        }
+        h1, h2, h3 {
+            color: #005A9C; background: white
+        }
+        h1 {
+            font: 170% sans-serif;
+            line-height: 110%;
+        }
+        h2 {
+            font: 140% sans-serif;
+            margin-top:40px;
+        }
+        h3 {
+            font: 120% sans-serif;
+            margin-top: 3px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid navy;
+        }
+        h4 { font: bold 100% sans-serif }
+        h5 { font: italic 100% sans-serif }
+        h6 { font: small-caps 100% sans-serif }
+
+
+        body {
+            padding: 2em 70px 2em 70px;
+            margin: 0;
+            font-family: sans-serif;
+            color: black;
+            background: white;
+            background-position: top left;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            text-align: justify;
+        }
+
+        section {
+            max-width: 1500px;
+        }
+
+        .figure {
+            margin-bottom: 20px;
+        }
+
+        :link { color: #00C; background: transparent }
+        :visited { color: #609; background: transparent }
+        a:active { color: #C00; background: transparent }
+
+        .sup-c,
+        .sup-op,
+        .sup-fp,
+        .sup-dp,
+        .sup-ap,
+        .sup-p,
+        .sup-ni,
+        .sup-cp,
+        .sup-cl {
+            cursor:help;
+            margin-left: 3px;
+        }
+
+        .sup-c {
+            color:orange;
+        }
+
+        .sup-op {
+            color:navy;
+        }
+
+        .sup-fp {
+            color:lightskyblue;
+        }
+
+        .sup-dp {
+            color:green;
+        }
+
+        .sup-ap {
+            color:darkred;
+        }
+
+        .sup-p {
+            color:black;
+        }
+
+        .sup-ni {
+            color:brown;
+        }
+
+        .sup-cp {
+            color:orange;
+        }
+
+        .sup-cl {
+            color:darkred;
+        }
+
+        code {
+            font-size: large;
+            color: darkred;
+        }
+
+        /* less prominent links for properties */
+        .proplink {
+            color: #336;
+            text-decoration: none;
+        }
+    </style>
+    
+    <script type="application/ld+json">
+      [
+  {
+    "@id": "http://linked.data.gov.au/def/care",
+    "@type": [
+      "https://schema.org/DefinedTermSet"
+    ],
+    "https://schema.org/description": [
+      {
+        "@value": "<p>The CARE Principles for Indigenous Data Governance's elements as a SKOS vocabulary</p>"
+      }
+    ],
+    "https://schema.org/name": [
+      {
+        "@value": "CARE Principles vocabulary"
+      }
+    ],
+    "https://schema.org/rights": [
+      {
+        "@value": "&copy; Indigenous Data Network, 2022"
+      }
+    ]
+  }
+]
+    </script>
+</head>
+<body>
+  <div id="pylode">made by <a href="http://github.com/rdflib/pyLODE">
+    <span style="color:#329545;">p</span><span style="color:#f9cb33;">y</span>LODE</a>
+    <span style="font-size:smaller;">2.8.3</span>
+  </div>
+  <h1>CARE Principles vocabulary</h1>
+<h3><em>A taxonomy</em></h3>
+  <section id="conceptscheme">
+      <h2 style="display:none;">Concept Scheme</h2>
+      <dl>
+          <dt>URI</dt>
+          <dd><code>http://linked.data.gov.au/def/care</code></dd>
+          <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/publisher">Publisher</a>(s)</dt>
+          <dd>
+              
+    <a href="https://linked.data.gov.au/org/idn">Indigenous Data Network</a><br/>
+          </dd>
+            <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/creator">Creator</a>(s)</dt>
+          <dd>
+              
+    <a href="https://linked.data.gov.au/org/idn">Indigenous Data Network</a><br/>
+          </dd>
+          <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/created">Created</a></dt>
+          <dd>2019-12-11</dd>
+          <dt><a class="proplink" href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/modified">Modified</a></dt>
+          <dd>2022-05-06</dd>
+          <dt>Rights</dt>
+          <dd>&copy; Indigenous Data Network, 2022</dd>
+          <dt>Source</dt>
+          <dd><a href="https://doi.org/10.5334/dsj-2020-043">https://doi.org/10.5334/dsj-2020-043</a></dd>
+          <dt>Scope Note</dt>
+          <dd>The IDN uses this vocabulary to rate datasets related to indigenous people according to those principles. The CARE Principles themselves are unaltered.</dd>
+          <dt>Ontology RDF</dt>
+          <dd><a href="data_file.ttl">RDF (turtle)</a></dd>
+      </dl>
+      <h2>Description</h2>
+      <div id="description">
+          <p>The CARE Principles for Indigenous Data Governance's elements as a SKOS vocabulary.</p>
+      </div>
+  </section>
+  <section id="toc">
+      <h2>Table of Contents</h2>
+      <ol>
+          <li><a href="#concepts">Concepts</a></li>
+          <li><a href="#namespaces">Namespaces</a></li>
+          <li><a href="#legend">Legend</a></li>
+      </ol>
+  </section>
+  <section id="concepts">
+    <h2>Concepts <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <ul class="hierarchy">
+        <li><a href="#CollectiveBenefit">C: Collective Benefit</a>
+            <ul><li><a href="#C1">C1</a></li></ul>
+            <ul><li><a href="#C2">C2</a></li></ul>
+            <ul><li><a href="#C3">C3</a></li></ul>
+        </li>
+        <li><a href="#AuthoritytoControl">A: Authority to Control</a>
+            <ul><li><a href="#A1">A1</a></li></ul>
+            <ul><li><a href="#A2">A2</a></li></ul>
+            <ul><li><a href="#A3">A3</a></li></ul>
+        </li>
+        <li><a href="#Responsibility">R: Responsibility</a>
+            <ul><li><a href="#R1">R1</a></li></ul>
+            <ul><li><a href="#R2">R2</a></li></ul>
+            <ul><li><a href="#R3">R3</a></li></ul>
+        </li>
+        <li><a href="#Ethics">E: Ethics</a>
+            <ul><li><a href="#E1">E1</a></li></ul>
+            <ul><li><a href="#E2">E2</a></li></ul>
+            <ul><li><a href="#E3">E3</a></li></ul>
+        </li>
+    </ul>
+    <div class="entity concept" id="AuthoritytoControl">
+        <h3>Authority to Control<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/care/A</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    The principle of authority to control<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Scope Note</th>
+                <td>
+                    Indigenous Peoples’ rights and interests in Indigenous data must be recognised and their authority to control such data be empowered. Indigenous data governance enables Indigenous Peoples and governing bodies to determine how Indigenous Peoples, as well as Indigenous lands, territories, resources, knowledges and geographical indicators, are represented and identified within data<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Narrower Concepts</th>
+                <td>
+                    <a href="#A3">A3</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                    <a href="#A1">A1</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                    <a href="#A2">A2</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="A1">
+        <h3>A1<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/care/A1</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    Recognizing rights and interests<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Scope Note</th>
+                <td>
+                    Indigenous Peoples have rights and interests in both Indigenous Knowledge and Indigenous data. Indigenous Peoples have collective and individual rights to free, prior, and informed consent in the collection and use of such data, including the development of data policies and protocols for collection<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Broader Concepts</th>
+                <td>
+                    <a href="#AuthoritytoControl">Authority to Control</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="A2">
+        <h3>A2<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/care/A2</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    Data for governance<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Scope Note</th>
+                <td>
+                    Indigenous Peoples have the right to data that are relevant to their world views and empower self-determination and effective self-governance. Indigenous data must be made available and accessible to Indigenous nations and communities in order to support Indigenous governance<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Broader Concepts</th>
+                <td>
+                    <a href="#AuthoritytoControl">Authority to Control</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="A3">
+        <h3>A3<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/care/A3</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    Governance of data<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Scope Note</th>
+                <td>
+                    Indigenous Peoples have the right to develop cultural governance protocols for Indigenous data and be active leaders in the stewardship of, and access to, Indigenous data especially in the context of Indigenous Knowledge<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Broader Concepts</th>
+                <td>
+                    <a href="#AuthoritytoControl">Authority to Control</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="CollectiveBenefit">
+        <h3>Collective Benefit<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/care/C</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    The principle of collective benefit<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Scope Note</th>
+                <td>
+                    Data ecosystems shall be designed and function in ways that enable Indigenous Peoples to derive benefit from the data<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Narrower Concepts</th>
+                <td>
+                    <a href="#C3">C3</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                    <a href="#C2">C2</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                    <a href="#C1">C1</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="C1">
+        <h3>C1<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/care/C1</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    For inclusive development and innovation<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Scope Note</th>
+                <td>
+                    Governments and institutions must actively support the use and reuse of data by Indigenous nations and communities by facilitating the establishment of the foundations for Indigenous innovation, value generation, and the promotion of local self-determined development processes<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Broader Concepts</th>
+                <td>
+                    <a href="#CollectiveBenefit">Collective Benefit</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="C2">
+        <h3>C2<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/care/C2</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    For improved governance and citizen engagement<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Scope Note</th>
+                <td>
+                    Data enrich the planning, implementation, and evaluation processes that support the service and policy needs of Indigenous communities. Data also enable better engagement between itizens, institutions, and governments to improve decision-making. Ethical use of open data has the capacity to improve transparency and decision-making by providing Indigenous nations and communities with a better understanding of their peoples, territories, and resources. It similarly can provide greater insight into third-party policies and programs affecting Indigenous Peoples<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Broader Concepts</th>
+                <td>
+                    <a href="#CollectiveBenefit">Collective Benefit</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="C3">
+        <h3>C3<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/care/C3</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    For equitable rights<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Scope Note</th>
+                <td>
+                    Indigenous data are grounded in community values, which extend to society at large. Any value created from Indigenous data should benefit Indigenous communities in an equitable manner and contribute to Indigenous aspirations for wellbeing<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Broader Concepts</th>
+                <td>
+                    <a href="#CollectiveBenefit">Collective Benefit</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="Ethics">
+        <h3>Ethics<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/care/E</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    The principle of ethics<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Scope Note</th>
+                <td>
+                    Indigenous Peoples’ rights and wellbeing should be the primary concern at all stages of the data life cycle and across the data ecosystem<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Narrower Concepts</th>
+                <td>
+                    <a href="#E2">E2</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                    <a href="#E1">E1</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                    <a href="#E3">E3</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="E1">
+        <h3>E1<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/care/E1</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    <br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Scope Note</th>
+                <td>
+                    Ethical data are data that do not stigmatize or portray Indigenous Peoples, cultures, or knowledges in terms of deficit. Ethical data are collected and used in ways that align with Indigenous ethical frameworks and with rights affirmed in UNDRIP. Assessing ethical benefits and harms should be done from the perspective of the Indigenous Peoples, nations, or communities to whom the data relate<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Broader Concepts</th>
+                <td>
+                    <a href="#Ethics">Ethics</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="E2">
+        <h3>E2<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/care/E2</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    <br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Scope Note</th>
+                <td>
+                    Ethical processes address imbalances in power, resources, and how these affect the expression of Indigenous rights and human rights. Ethical processes must include representation from relevant Indigenous communities<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Broader Concepts</th>
+                <td>
+                    <a href="#Ethics">Ethics</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="E3">
+        <h3>E3<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/care/E3</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    <br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Scope Note</th>
+                <td>
+                    Data governance should take into account the potential future use and future harm based on ethical frameworks grounded in the values and principles of the relevant Indigenous community. Metadata should acknowledge the provenance and purpose and any limitations or obligations in secondary use inclusive of issues of consent<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Broader Concepts</th>
+                <td>
+                    <a href="#Ethics">Ethics</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="Responsibility">
+        <h3>Responsibility<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/care/R</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    The principle of responsibility<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Scope Note</th>
+                <td>
+                    Those working with Indigenous data have a responsibility to share how those data are used to support Indigenous Peoples’ selfdetermination and collective benefit. Accountability requires meaningful and openly available evidence of these efforts and the benefits accruing to Indigenous Peoples<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Narrower Concepts</th>
+                <td>
+                    <a href="#R2">R2</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                    <a href="#R1">R1</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                    <a href="#R3">R3</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="R1">
+        <h3>R1<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/care/R1</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    <br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Scope Note</th>
+                <td>
+                    Indigenous data use is unviable unless linked to relationships built on respect, reciprocity, trust, and mutual understanding, as defined by the Indigenous Peoples to whom those data relate. Those working with Indigenous data are responsible for ensuring that the creation, interpretation, and use of those data uphold, or are respectful of, the dignity of Indigenous nations and communities<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Broader Concepts</th>
+                <td>
+                    <a href="#Responsibility">Responsibility</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="R2">
+        <h3>R2<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/care/R2</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    <br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Scope Note</th>
+                <td>
+                    Use of Indigenous data invokes a reciprocal responsibility to enhance data literacy within Indigenous communities and to support the development of an Indigenous data workforce and digital infrastructure to enable the creation, collection, management, security, governance, and application of data<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Broader Concepts</th>
+                <td>
+                    <a href="#Responsibility">Responsibility</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="entity concept" id="R3">
+        <h3>R3<sup title="Concept" class="sup-cp">cp</sup></h3>
+        <table>
+            <tr>
+                <th>URI</th>
+                <td><code>http://linked.data.gov.au/def/care/R3</code></td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>
+                    <br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Scope Note</th>
+                <td>
+                    Resources must be provided to generate data grounded in the languages, worldviews, and lived experiences (including values and principles) of Indigenous Peoples<br/>
+                </td>
+            </tr>
+            <tr>
+                <th>Broader Concepts</th>
+                <td>
+                    <a href="#Responsibility">Responsibility</a><sup class="sup-cp" title="concept">cp</sup><br/>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+  <section id="namespaces">
+    <h2>Namespaces <span style="float:right; font-size:smaller;"><a href="">&uparrow;</a></span></h2>
+    <dl>
+        <dt>care</dt>
+        <dd><code>http://linked.data.gov.au/def/care/</code></dd>
+        <dt>cs</dt>
+        <dd><code>http://linked.data.gov.au/def/care</code></dd>
+        <dt>dcterms</dt>
+        <dd><code>http://purl.org/dc/terms/</code></dd>
+        <dt>rdf</dt>
+        <dd><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></dd>
+        <dt>rdfs</dt>
+        <dd><code>http://www.w3.org/2000/01/rdf-schema#</code></dd>
+        <dt>sdo</dt>
+        <dd><code>https://schema.org/</code></dd>
+        <dt>skos</dt>
+        <dd><code>http://www.w3.org/2004/02/skos/core#</code></dd>
+        <dt>xsd</dt>
+        <dd><code>http://www.w3.org/2001/XMLSchema#</code></dd>
+    </dl>
+</section>
+
+  <section id="legend">
+    <h2>Legend</h2>
+    <table class="entity">
+      <tr><td><sup class="sup-cl" title="Collections">cl</sup></td><td>Collections</td></tr>
+      <tr><td><sup class="sup-cp" title="Concepts">cp</sup></td><td>Concepts</td></tr>
+    </table>
+  </section>
+</body>
+</html>
