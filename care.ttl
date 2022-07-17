@@ -28,7 +28,7 @@ cs:
 <https://linked.data.gov.au/org/idn>
     a sdo:Organization ;
     sdo:name "Indigenous Data Network" ;
-    sdo:url "hhttps://www.idnau.org"^^xsd:anyURI ;
+    sdo:url "https://www.idnau.org"^^xsd:anyURI ;
 .
 
 care:C
